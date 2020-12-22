@@ -1,5 +1,19 @@
 # how-to-algorithms
 
+
+### remove an element
+```python
+
+fruits = ['apple', 'pear', 'banana', 'orange']
+fruits.remove('apple')  # remove removes the first matching value, not a specific index
+del fruits[0]           # del removes the item at a specific index
+fru = fruits.pop(0)     # pop removes the item at a specific index and returns it
+
+# del and pop can be used for dict
+del d[key]
+value = d.pop(key)
+```
+
 ### sort
 ```python
 list_a.sort()            # build-in sorting, list_a is changed
@@ -37,4 +51,44 @@ while left <= right:
         left = mid + 1
         mid = (left + right) // 2
         
+```
+
+### queue
+
+```python
+class MyQueue: 
+    def __init__(self):  # First in first out.
+        self.queue = []
+
+    def push(self, x: int) -> None:  # Push element x to the back of queue.
+        self.queue.append(x)
+
+    def pop(self) -> int:  # Removes the element from in front of queue and returns that element.
+        return self.queue.pop(0)
+
+    def peek(self) -> int:   # Get the front element.
+        return self.queue[0]
+
+    def empty(self) -> bool:  # Returns whether the queue is empty.
+        return len(self.queue) == 0
+```
+
+
+### stack
+```python
+class MyStack:
+    def __init__(self):   # First in last out.
+        self.stack = []
+
+    def push(self, x: int) -> None:
+        self.stack.append(x)
+
+    def pop(self) -> int:  # Removes the element on top of the stack and returns that element.
+        return self.stack.pop(-1)
+
+    def top(self) -> int:   # Get the top element.
+        return self.stack[-1]
+
+    def empty(self) -> bool:   #
+        return len(self.stack) == 0
 ```
