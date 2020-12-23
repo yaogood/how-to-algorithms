@@ -1,8 +1,7 @@
 # how-to-algorithms
 
 # class (data) type
-| immutable      | mutable |
-| ----------- | ----------- |
+
 | int |list |
 |  float |dict |
 | decimal |set |
