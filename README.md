@@ -7,7 +7,7 @@
 |  float |dict |
 | decimal |set |
 | complex |bytearray |
-| bool | user-defined classes (unless specifically made immutable)  |
+| bool | user-defined classes<br>(unless specifically made immutable)  |
 | str  |  |
 | tuple |  |
 | range |  |
