@@ -1,6 +1,6 @@
 # how-to-algorithms
 
-# class (data) type
+### class (data) type
 | type        | classes |
 | ----------- | ----------- |
 | immutable   | int, float, decimal, complex, bool, str, tuple, range, frozenset, bytes |
@@ -11,16 +11,13 @@
 A shallow copy constructs a new compound object and then (to the extent possible) **inserts references** into it to the objects found in the original.
 A deep copy constructs a new compound object and then, **recursively, inserts copies** into it of the objects found in the original.
 ```python
-
 import copy
 y = copy.copy(x)
 y = copy.deepcopy(x)
-
 ```
 
 ### remove an element
 ```python
-
 fruits = ['apple', 'pear', 'banana', 'orange']
 fruits.remove('apple')  # remove removes the first matching value, not a specific index
 del fruits[0]           # del removes the item at a specific index
@@ -37,10 +34,8 @@ list_a.sort()            # build-in sorting, list_a is changed
 list_b = sorted(list_a)  # list_a is unchanged
 
 list_c = sorted(list_a, reverse=True, key=lambda element_class: element_class.variable)
-
 # element_class is the class name of elements in list_a
 # if reverse is True, then descending
-
 
 from operator import itemgetter, attrgetter
 def multisort(xs, specs):
