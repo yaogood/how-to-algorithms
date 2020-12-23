@@ -3,22 +3,16 @@
 # class (data) type
 | immutable      | mutable |
 | ----------- | ----------- |
-| int
-float
-decimal
-complex
-bool
-str
-tuple
-range
-frozenset
-bytes      | list
-dict
-set
-bytearray
-user-defined classes (unless specifically made immutable)       |
-| Paragraph   | Text        |
-
+| int |list |
+|  float |dict |
+| decimal |set |
+| complex |bytearray |
+| bool | user-defined classes (unless specifically made immutable)  |
+| str  |  |
+| tuple |  |
+| range |  |
+| frozenset |  |
+| bytes      |   |
 
 
 ### copy() vs deepcopy()
