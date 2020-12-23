@@ -33,17 +33,26 @@ value = d.pop(key)
 list_a.sort()            # build-in sorting, list_a is changed
 list_b = sorted(list_a)  # list_a is unchanged
 
-list_c = sorted(list_a, reverse=True, key=lambda element_class: element_class.variable)
+list_c = sorted(list_a, reverse=True, key=lambda element_class: element_class.variable) 
 # element_class is the class name of elements in list_a
 # if reverse is True, then descending
 
+# Complex Sorts (recommended)
 from operator import itemgetter, attrgetter
 def multisort(xs, specs):
     for key, reverse in reversed(specs):  # The reversed() function returns the reversed iterator of the given sequence.
         xs.sort(key=attrgetter(key), reverse=reverse)
     return xs
-    
 multisort(list(student_objects), (('grade', True), ('age', False)))
+
+# Decorate-Sort-Undecorate
+decorated = [(student.grade, i, student) for i, student in enumerate(student_objects)]
+decorated.sort()
+res = [student for grade, i, student in decorated]
+
+# cmp is not supported after python 3.x
+# functools.cmp_to_key() and functools.total_ordering decorator is used in custom classes
+
 
 ```
 
@@ -71,16 +80,12 @@ while left <= right:
 class MyQueue: 
     def __init__(self):  # First in first out.
         self.queue = []
-
     def push(self, x: int) -> None:  # Push element x to the back of queue.
         self.queue.append(x)
-
     def pop(self) -> int:  # Removes the element from in front of queue and returns that element.
         return self.queue.pop(0)
-
     def peek(self) -> int:   # Get the front element.
         return self.queue[0]
-
     def empty(self) -> bool:  # Returns whether the queue is empty.
         return len(self.queue) == 0
 ```
@@ -91,16 +96,12 @@ class MyQueue:
 class MyStack:
     def __init__(self):   # First in last out.
         self.stack = []
-
     def push(self, x: int) -> None:
         self.stack.append(x)
-
     def pop(self) -> int:  # Removes the element on top of the stack and returns that element.
         return self.stack.pop(-1)
-
     def top(self) -> int:   # Get the top element.
         return self.stack[-1]
-
     def empty(self) -> bool:   #
         return len(self.stack) == 0
 ```
