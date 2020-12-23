@@ -1,8 +1,10 @@
 # how-to-algorithms
 
 ### operators
--3 // 2 => -2
-int(-3/2) => -1
+```python
+# -3 // 2 => -2
+# int(-3/2) => -1
+```
 
 
 ### class (data) type
