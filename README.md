@@ -1,17 +1,10 @@
 # how-to-algorithms
 
 # class (data) type
-
-| int |list |
-|  float |dict |
-| decimal |set |
-| complex |bytearray |
-| bool | user-defined classes<br>(unless specifically made immutable)  |
-| str  |  |
-| tuple |  |
-| range |  |
-| frozenset |  |
-| bytes      |   |
+| type        | classes |
+| ----------- | ----------- |
+| immutable   | int, float, decimal, complex, bool, str, tuple, range, frozenset, bytes |
+| mutable     | list, dict, set, bytearray, user-defined classes (unless specifically made immutable) | 
 
 
 ### copy() vs deepcopy()
