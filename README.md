@@ -6,6 +6,10 @@
 # int(-3/2) => -1
 ```
 
+### basic
+```python
+dict[k] = dict.get(k, default_value) + 1  # if k in dict, then dict[k]=dict[k]+1, else new dict[k]=default_value+1
+```
 
 ### class (data) type
 | type        | classes |
