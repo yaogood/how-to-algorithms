@@ -8,7 +8,9 @@
 
 ### basic
 ```python
-dict[k] = dict.get(k, default_value) + 1  # if k in dict, then dict[k]=dict[k]+1, else new dict[k]=default_value+1
+# a better update dict method
+dict[k] = dict.get(k, value) + 1  # if k in dict, then dict[k]=dict[k]+1, else new dict[k]=value+1
+# value: Optional. A value to return if the specified key does not exist. Default value None.
 ```
 
 ### class (data) type
