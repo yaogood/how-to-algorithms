@@ -99,6 +99,19 @@ while queue and some_conditions:
         queue.append(next_state)
 ```
 
+### DFS
+```python
+
+def dfs(cur, path_set_or_list):
+    if final_state:
+        # do some operations about results
+        return results
+    for next in dic[cur]:
+        # do some operations
+        dfs(next)
+```
+
+
 ### queue
 
 ```python
