@@ -87,6 +87,18 @@ while left <= right:
         
 ```
 
+### BFS
+```python
+queue = collections.deque()
+queue.append(start_state)
+while queue and some_conditions:
+    length = len(queue)
+    for i in range(length):
+        cur_state = queue.popleft()
+        # do some operations on current_state and generate next_states
+        queue.append(next_state)
+```
+
 ### queue
 
 ```python
