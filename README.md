@@ -22,16 +22,14 @@ binary search tree, trie, segment tree, 树状数组（Binary Indexed Tree）
 heap sort, merge sort, bucket sort (pigeonhole sort, counting sort), radix sort, quick sort, insert sort, selection sort, bubble sort
 ##### 2. binary search
 ##### 3. dynamic programming
-##### greedy
-##### breadth first search
-##### depth first search
-##### backtracing
-##### recursion
-##### divide and conquer
-##### union find
-##### bit manipulation
-##### geometry
-##### sampling
+##### 4. greedy
+##### 5. breadth first search & depth first search
+##### 6. recursion & backtracing
+##### 7. divide and conquer
+##### 8. union find
+##### 9. bit manipulation
+##### 10. geometry
+##### 11. sampling
 reservoir sampling, rejection sampling
 
 
