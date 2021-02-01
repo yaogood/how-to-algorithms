@@ -1,8 +1,6 @@
 # how-to-algorithms
 
-# content
-
-#### data structure
+## data structure
 
 ##### 1. hash table
 unordered dict, ordered dict
@@ -18,7 +16,7 @@ binary search tree, trie, segment tree, 树状数组（Binary Indexed Tree）
 ##### 8. heap/priority queue
 
 
-### algorithms
+## algorithms
 
 ##### 1. sort: 
 heap sort, merge sort, bucket sort (pigeonhole sort, counting sort), radix sort, quick sort, insert sort, selection sort, bubble sort
