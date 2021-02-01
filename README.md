@@ -1,20 +1,25 @@
 # how-to-algorithms
 
-### content
+## content
 
 #### data structure
 
-##### hash table: unordered dict, ordered dict
-##### linked list/array/string: KMP
-##### tree: binary search tree, trie, segment tree, 树状数组（Binary Indexed Tree）
-##### graph: 最小生成树（Prim, Kruskal）, 最短路径（BFS, DFS, Floyd, Dijkstra, Bellman-Ford, SPFA）, Topological Sort
+##### hash table
+unordered dict, ordered dict
+##### linked list/array/string: 
+KMP
+##### tree
+binary search tree, trie, segment tree, 树状数组（Binary Indexed Tree）
+##### graph 
+最小生成树（Prim, Kruskal）, 最短路径（BFS, DFS, Floyd, Dijkstra, Bellman-Ford, SPFA）, Topological Sort
 ##### stack
 ##### queue
 ##### dequeue
 ##### heap/priority queue
-##### sampling: reservoir sampling, rejection sampling
+##### sampling
+reservoir sampling, rejection sampling
 
-#### algorithms
+### algorithms
 
 ##### sort: heap sort, merge sort, bucket sort (pigeonhole sort, counting sort), radix sort, quick sort, insert sort, selection sort, bubble sort
 ##### binary search
