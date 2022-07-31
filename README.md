@@ -14,16 +14,19 @@ binary search tree, trie, segment tree, 树状数组（Binary Indexed Tree）
 ##### 6. queue
 ##### 7. dequeue
 ##### 8. heap/priority queue
-##### 9. sortedcontainers
-SortedSet()
+##### 9. sorted containers
 
+```python
+import sortedcontainers
+
+SortedSet()
 SortedList()
 
 SortedDict() -- sorted by key
 
 dic = {key:value}
-
 SortedList([(value, key)]) -- sorted by value
+```
 
 
 
