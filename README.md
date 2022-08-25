@@ -160,6 +160,32 @@ def dfs(cur, path_set_or_list):
         dfs(next)
 ```
 
+### Union Find
+```python
+parent = []
+rank = []
+
+def union(par, x, y):
+    px = find(par, x)
+    py = find(par, y)
+    if px == py:
+        return
+        
+    if rank[px] > rank[py]:
+        par[py] = px
+    elif rank[px] < rank[py]:
+        par[px] = py
+    else:
+        par[py] = px
+        rank[px] += 1
+
+def find(par, x):
+    if par[x] != x:
+        par[x] = find(par, par[x])
+    return par[x]
+```            
+###
+
 
 ### queue
 
@@ -192,3 +218,4 @@ class MyStack:
     def empty(self) -> bool:   #
         return len(self.stack) == 0
 ```
+
